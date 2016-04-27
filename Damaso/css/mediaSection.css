@@ -1,0 +1,111 @@
+﻿#media {
+    margin: auto;
+    background-color: rgba(227, 106, 19, 0.7);
+    overflow: auto;
+}
+
+form{
+    padding:5px;
+}
+
+article {
+    overflow: auto;
+    padding: 2em;
+    width:90%;
+    margin:auto;
+    border-radius:15px;
+}
+
+.oddColor {
+    /*background-color: rgba(227, 106, 19, 0.9);*/
+    background-color:darkgray;
+}
+
+#imgNumberone {
+    background-image: url(../images/6969506-jewelry-box-necklace-pendant.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#imgNumbertwo {
+    background-image: url(../images/coracao_pingente.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#imgNumberthree {
+    background-image: url(../images/photoGallery.jpg);
+    background-size: cover;
+    background-position: 40% 40%;
+}
+
+#imgNumberfour {
+    background: url('../images/jewellery-wallpaper-2560x1600 - Copy.jpg');
+    background-size: cover;
+    background-position: 30% 30%;
+}
+
+[class$=left] {
+    width: 50%;
+    float: left;
+    height: 15em;
+}
+
+[class$=right] {
+    width: 50%;
+    float: right;
+    height: 15em;
+}
+
+.textaside {
+    text-align: center;
+    padding: 10%;
+    /*color: lightgrey;
+    text-shadow: -1px 0 gray, 0 -1px gray;
+    font-size: 1.2em;*/
+}
+
+article a {
+    position: relative;
+    overflow: hidden;
+}
+
+    article a:hover #appears {
+        top: 0%;
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotateX(0deg);
+    }
+
+    article a div {
+        height: inherit;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(227, 106, 19, 0.55);
+        top: 100%;
+        transition: top,transform ease 0.5s;
+        -moz-transform: rotateX(40deg);
+        -ms-transform: rotate(40deg);
+        -o-transform: rotate(40deg);
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+    }
+
+        article a div strong {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 30%;
+            font-weight: 100;
+            font-size: 2.5em;
+            color: white;
+        }
+
+
+@media (max-width : 650px), only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    article {
+    width:70%;
+}
+}

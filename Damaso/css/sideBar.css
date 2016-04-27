@@ -1,0 +1,55 @@
+﻿#sideBar {
+    position: fixed;
+    width: 85px;
+    top: 0px;
+    left: -85px;
+    background-color: #333;
+    height: 100%;
+    z-index: 5;
+    color: rgba(241, 104, 16,0.6);
+    transition: 0.4s ease;
+}
+
+#container{
+    padding-left: 0px;
+        transition: 0.4s ease;
+}
+
+    #sideBar ul {
+        list-style-type: none;
+        padding: 10px;
+        padding-top: 60px;
+    }
+
+        #sideBar ul li {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+            #sideBar ul li:hover {
+                color: rgba(241, 104, 16,0.9);
+                cursor: pointer;
+                -moz-box-shadow: rgba(241, 104, 16,0.7);
+                -webkit-box-shadow: rgba(241, 104, 16,0.7);
+                box-shadow: rgba(241, 104, 16,0.7);
+            }
+
+#sideBarToggler {
+    display: none;
+}
+
+    #sideBarToggler:checked ~ .sideBarScroll {
+        left: 0px;
+    }
+
+    #sideBarToggler:checked ~ #container {
+        padding-left: 85px;
+    }
+
+    #sideBarToggler:checked #sideBar {
+        left: 0px;
+    }
+
+/*#sideBarToggler:checked ~ #container header .logo{
+    text-align:left;
+}*/
