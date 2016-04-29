@@ -1,29 +1,32 @@
 ﻿#sideBar {
     position: fixed;
+    z-index: 5;
     width: 85px;
-    top: 0px;
     left: -85px;
     background-color: #333;
-    height: 100%;
-    z-index: 5;
     color: rgba(241, 104, 16,0.6);
     transition: 0.4s ease;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#container{
-    padding-left: 0px;
-        transition: 0.4s ease;
-}
+    #sideBar h1 {
+        padding: 0px;
+    }
 
     #sideBar ul {
         list-style-type: none;
         padding: 10px;
-        padding-top: 60px;
+        margin: 0px;
     }
 
         #sideBar ul li {
             font-size: 16px;
-            margin-bottom: 20px;
+            padding-bottom: 15px;
+            text-align: right;
         }
 
             #sideBar ul li:hover {
@@ -38,18 +41,31 @@
     display: none;
 }
 
-    #sideBarToggler:checked ~ .sideBarScroll {
+    #sideBarToggler:checked ~ #sideBar {
         left: 0px;
     }
+
+    #sideBarToggler:checked ~ header label span {
+        background: transparent;
+    }
+
+        #sideBarToggler:checked ~ header label span:after {
+            transform-origin: right;
+            transform: rotate(45deg);
+        }
+
+        #sideBarToggler:checked ~ header label span:before {
+            transform-origin: right;
+            transform: rotate(-45deg);
+        }
 
     #sideBarToggler:checked ~ #container {
         padding-left: 85px;
     }
 
-    #sideBarToggler:checked #sideBar {
-        left: 0px;
-    }
+#container {
+    padding-left: 0px;
+    transition: 0.4s ease;
+}
 
-/*#sideBarToggler:checked ~ #container header .logo{
-    text-align:left;
-}*/
+

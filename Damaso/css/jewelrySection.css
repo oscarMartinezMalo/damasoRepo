@@ -14,7 +14,8 @@
     margin: 10px auto;
     margin-top: 0px;
     align-items: center;
-    padding-bottom:4%;
+    padding-bottom: 4%;
+    overflow: hidden;
 }
 
 a[class^="icon"] {
@@ -32,21 +33,19 @@ a[class^="icon"] {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    transition:ease 1s;
+    transition: ease 1s;
 }
 
     a[class^="icon"]:hover {
-
-  /*-webkit-animation: animationIcons 1000ms linear both;
+        /*-webkit-animation: animationIcons 1000ms linear both;
   animation: animationIcons 1000ms linear both;*/
-    transform:rotate(30deg);
+        transform: rotate(30deg);
         -moz-box-shadow: 0px 0px 25px rgba(227, 106, 19, 1);
-    -webkit-box-shadow: 0px 25px 5px rgba(227, 106, 19, 1);
-    box-shadow: 0px 0px 25px rgba(227, 106, 19, 1);
-
+        -webkit-box-shadow: 0px 25px 5px rgba(227, 106, 19, 1);
+        box-shadow: 0px 0px 25px rgba(227, 106, 19, 1);
     }
 
-#diamond{
+#diamond {
     background-image: url(../icons/diamonds.gif);
     width: 130px;
     height: 130px;
@@ -54,7 +53,7 @@ a[class^="icon"] {
 }
 
 #diamondRing {
-    background-position:25% 50%;
+    background-position: 25% 50%;
     background-image: url(../icons/engagement.jpg);
     order: 1;
 }

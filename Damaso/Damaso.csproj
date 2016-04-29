@@ -125,7 +125,7 @@
     <Content Include="images\tres.jpg" />
     <Content Include="images\weddingRings.jpg" />
     <Content Include="images\womanWearing.jpg" />
-    <Content Include="javaScript\default.js" />
+    <Content Include="Scripts\default.js" />
     <Content Include="packages.config" />
     <Content Include="icons\diamonds.gif" />
     <Content Include="Scripts\jquery-2.2.1.js" />
@@ -145,13 +145,16 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
+    <None Include="Scripts\_references.js" />
     <Content Include="videos\ES_452_01_01_00.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="javaScript\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
